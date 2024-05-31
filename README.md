@@ -2,7 +2,7 @@
 1. `dataset.csv`: 원본 데이터셋
     - `test_data.csv`, `val_data.csv`, `train_data.csv`는 원본 데이터셋을 2:2:8 = 166:164:494 비율로 나눈 것.
 2. `test_data_with_query.csv`: `test_data.csv`에 `query-make.ipynb`를 활용해 GPT가 생성한 자연어 쿼리를 추가한 것.
-3. `test_data_with_retrive.csv`: `test_data_with_query.csv` 파일을 활용해 자연어 쿼리에 대하여 BM25 리트리버로 검색한 결과 데이터셋
+3. `test_data_with_retrieve.csv`: `test_data_with_query.csv` 파일을 활용해 자연어 쿼리에 대하여 BM25 리트리버로 검색한 결과 데이터셋
     - `normalize`는 DB를 제 1 정규화해서, 하나의 데이터 샘플 당 하나의 검색 결과가 매치되도록 한 것.
 
 <br>
@@ -10,7 +10,7 @@
 ## 2. Retriever
 - BM25 알고리즘으로 retrieve
     - 이때, 검색 후보군이 되는 문서 집합은 `train_data.csv`이며, 검색의 기준이 되는 쿼리는 `test_data_with_query.csv`의 자연어 쿼리
-- 검색결과를 retriver 인스턴스 내부에 저장해두고, 이후 `get_search_history()` 메소드로 확인하거나, `save_search_history_to_csv()` 메소드를 활용해 저장가능
+- 검색결과를 retriever 인스턴스 내부에 저장해두고, 이후 `get_search_history()` 메소드로 확인하거나, `save_search_history_to_csv()` 메소드를 활용해 저장가능
 
 <br>
 
