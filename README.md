@@ -1,10 +1,13 @@
 ## 1. Datasets profile
-1. `dataset.csv`: 원본 데이터셋
-    - `test_data.csv`, `val_data.csv`, `train_data.csv`는 원본 데이터셋을 2:2:8 = 166:164:494 비율로 나눈 것.
+1. `dataset.csv`: 처음 크롤링 작업 후 받은 원본 데이터셋
+    - `test_data.csv`, `val_data.csv`, `train_data.csv`는 원본 데이터셋을 셔플해서(random_state=42) 2:2:8 = 166:164:494 비율로 나눈 것.
 2. `test_data_with_query.csv`: `test_data.csv`에 `query-make.ipynb`를 활용해 GPT가 생성한 자연어 쿼리를 추가한 것.
 3. `test_data_with_retrieve.csv`: `test_data_with_query.csv` 파일을 활용해 자연어 쿼리에 대하여 BM25 리트리버로 검색한 결과 데이터셋
     - `normalize`는 DB를 제 1 정규화해서, 하나의 데이터 샘플 당 하나의 검색 결과가 매치되도록 한 것.
-
+4. `laws_raw.csv`: 법령 정보 최종 정리본으로 전달받은 원본 파일
+    - `laws_shuffled.csv`: 법령 정보 파일을 원본 데이터셋을 셔플했던 것과 같은 순서로 섞고, N/A값들을 지운 것. (원본 인덱스값은 보존되어 있음. 즉, 중간에 NA값에 해당하는 인덱스가 누락되어 있음)
+5. `test_data_with_retrieve_and_laws_normalized.csv`: 최종적으로 다 정리한 파일.
+ 
 <br>
 
 ## 2. Retriever
