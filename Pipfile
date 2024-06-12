@@ -9,8 +9,10 @@ openpyxl = "*"
 requests = "*"
 user-agent = "*"
 lxml = "*"
+pandas = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.12"
