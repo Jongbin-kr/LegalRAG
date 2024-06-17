@@ -52,12 +52,12 @@ Add additional notes about how to deploy this on a live system
 
 ## Release History
 - 2024.06.13. First submission &  archiving for the final term project
-- 2024.06.16.
+- 2024.06.17. Merged all the repos with git log
 
 ### TODO
-- [ ]  Archive all the repos
-- [ ]  Add main.py and run.sh with the setup of huggingface and openai API  key
+- [X]  Merge all the repos
 - [ ]  Add requirement.txt or setup.py
+- [ ]  Add main.py and run.sh with the setup of huggingface and openai API  key
 
 ## Our team
 - [원종빈](https://github.com/Jongbin-kr)
