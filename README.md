@@ -72,6 +72,7 @@ GPT-3.5-turbo의 답변을 Groundtruth삼고, [AlphaMist7B](https://huggingface.
         └── final_result.csv
 ```
 
+<br>
 
 ## Release History
 - 2024.06.13. First submission &  archiving for the final term project
@@ -93,11 +94,16 @@ Add additional notes about how to deploy this on a live system
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds -->
+
+<br>
+
 ## Our team
 - [원종빈](https://github.com/Jongbin-kr)
 - [Hyeyoung-Eum](https://github.com/Hyeyoung-Eum)
 - [bykimby](https://github.com/bykimby)
 - [hoonhk20](https://github.com/hoonhk20)
+
+<br>
 
 ## License
 
