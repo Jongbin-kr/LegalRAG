@@ -76,6 +76,7 @@ GPT-3.5-turbo의 답변을 Groundtruth삼고, [AlphaMist7B](https://huggingface.
 ## Release History
 - 2024.06.13. First submission &  archiving for the final term project
 - 2024.06.17. Merged all the repos with git log
+- 2024.06.18. Release v1.0, the first version after re-organizing the first submission
 
 ### TODO
 - [X]  Merge all the repos
