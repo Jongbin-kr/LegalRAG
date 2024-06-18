@@ -106,7 +106,7 @@ def calcuate_laws_match(preds, groundtruths):
         if isinstance(pred, float):
             continue
         
-        pred = set(eval(pred))
+        pred = set(eval(pred)) if isinstance(pred, str) else set(pred)
         groundtruth = set(groundtruth.split(', '))
 
         true_positive += len(pred &  groundtruth)

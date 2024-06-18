@@ -46,10 +46,10 @@ if __name__ == "__main__":
 
 
     template = """다음은 내가 처한 상황이야. 변호사로서 내 상황에 적용할 수 있는 구체적인 법령과 그 이유를 설명해줘.
-    {query}
-    ---
-    답변:
-    """
+{query}
+---
+답변:
+"""
     
     test_df = pd.read_csv('./database/datasets/test_data_with_retrieve.csv', index_col=0)
     query = test_df.iloc[45, 0]
